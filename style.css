@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.welcome-container {
+  text-align: center;
+}
+
+.welcome-text {
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  color: white;
+  animation: welcomeAnimation 2s ease-in-out infinite;
+}
+
+@keyframes welcomeAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
